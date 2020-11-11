@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Рома Ткачев](https://up.htmlacademy.ru/adaptive/21/user/235287).
-* Наставник: `Неизвестно`.
+* Наставник: Ярослав Косович
 
 ---
 
