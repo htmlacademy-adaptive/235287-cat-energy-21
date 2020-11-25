@@ -1,0 +1,25 @@
+.main-nav__list {
+  @include list-reset();
+  @include oswald(500);
+}
+
+.main-nav__item {
+  text-transform: uppercase;
+  @include fonts(20px, 20px);
+}
+
+.main-nav__link {
+  @include color ($basic-black, 1);
+
+  @include link-decoration-reset();
+
+  &:hover {
+    @include color($basic-black, 0.6)
+  }
+
+  &:active {
+    @include color ($basic-black, 0.3)
+  };
+}
+
+

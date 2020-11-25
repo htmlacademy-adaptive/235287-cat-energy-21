@@ -1,0 +1,15 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.page {
+  box-sizing: border-box;
+}
+
+.page__body {
+  margin: 0 auto;
+  width: 320px;
+  background: $basic-white;
+}

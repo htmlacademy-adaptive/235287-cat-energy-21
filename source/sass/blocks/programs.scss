@@ -1,0 +1,32 @@
+.programs__list {
+  @include list-reset();
+}
+
+.programs__item {
+  background-color: $basic-grey;
+}
+
+.programs__title {
+  @include oswald(400);
+  @include fonts(24px, 37px);
+  text-transform: uppercase;
+}
+
+.programs__description {
+  @include arial (400);
+  @include fonts (14px, 18px)
+  color: $text-grey;
+}
+
+
+.programs__link {
+  @include oswald(400);
+  @include fonts(16px, 16px);
+  color: $basic-black;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:active {
+    @include color ($basic-black, 0.3)
+  }
+}

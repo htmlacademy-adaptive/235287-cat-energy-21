@@ -1,0 +1,14 @@
+.instuction__heading {
+  @include oswald(400);
+  @include fonts(36px, 40px);
+}
+
+.instruction__list {
+  @include list-reset();
+}
+
+.instruction__description {
+  @include arial (400);
+  @include fonts (14px, 18px)
+  color: $text-grey;
+}
