@@ -1,4 +1,6 @@
 .form__label {
+  display: block;
+
   @include oswald(400);
   @include fonts(16px, 18px);
   text-transform: uppercase;
@@ -9,11 +11,7 @@
   }
 }
 
-.form__label {
-  display: block;
-}
-
-.form__inpu--textarea {
+.form__input--textarea {
   min-width: 280px;
 }
 
