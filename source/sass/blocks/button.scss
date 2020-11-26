@@ -1,4 +1,5 @@
 .button {
+  @include oswald(400);
   font-size: 14px;
   line-height: 18px;
   color: $basic-white;
