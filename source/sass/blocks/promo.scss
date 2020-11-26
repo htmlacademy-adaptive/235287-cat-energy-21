@@ -34,12 +34,4 @@
 
   @include oswald(400);
   @include link-decoration-reset();
-
-  &:hover {
-    background-color: $active-green;
-  }
-
-  &:active {
-    color: rgba($basic-white, 0.3);
-  }
 }
