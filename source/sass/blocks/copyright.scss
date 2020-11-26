@@ -1,5 +1,4 @@
 .copyright__link {
-  @include arial(400);
   @include fonts(16px, 18.4px);
   @include link-decoration-reset();
   color: $text-grey;

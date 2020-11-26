@@ -12,4 +12,6 @@
   margin: 0 auto;
   width: 320px;
   background: $basic-white;
+  @include arial (400);
+  @include fonts (14px, 18px);
 }

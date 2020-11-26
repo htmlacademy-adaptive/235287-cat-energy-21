@@ -2,14 +2,7 @@
   background-color: $basic-grey;
 }
 
-.example__heading {
-  @include oswald(400);
-  @include fonts(36px, 40px);
-}
-
 .example__description {
-  @include arial (400);
-  @include fonts (14px, 18px)
   color: $text-grey;
 }
 
@@ -21,33 +14,12 @@
 }
 
 .example__definition {
-  @include arial(400);
   @include fonts(12px, 12px);
 }
 
-.exaple__spendings {
+.example__spendings {
   @include oswald(400);
   @include fonts(14px, 20px);
   text-transform: uppercase;
 }
 
-.slider__list {
-  @include list-reset();
-}
-
-.slider__text {
-  @include oswald(400);
-  @include fonts(16px, 20px);
-  border: none;
-  padding: 0;
-  border-bottom: 1px dotted $frame-grey;
-  text-transform: uppercase;
-
-  &:hover {
-    border-bottom: 1px solid $frame-grey;
-  }
-
-  &:active {
-    border-bottom: none;
-  }
-}

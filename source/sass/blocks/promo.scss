@@ -15,14 +15,9 @@
   };
 }
 
-.promo__wrapper {
-  /*background-color: rgba(104, 183, 56, 0.85);*/
-}
-
 .promo__heading {
   @include oswald(400);
   @include fonts(36px, 36px);
-  color: $basic-white;
 }
 
 .promo__slogan {
@@ -36,7 +31,6 @@
   display: block;
   padding: 7px 44px;
   text-align: center;
-  @include button(14px, 18px);
   @include oswald(400);
   @include link-decoration-reset();
 
@@ -45,6 +39,6 @@
   };
 
   &:active {
-    @include color($active-green, 0.3);
+    color: rgba($basic-white, 0.3);
   };
 }

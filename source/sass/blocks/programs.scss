@@ -13,8 +13,6 @@
 }
 
 .programs__description {
-  @include arial (400);
-  @include fonts (14px, 18px)
   color: $text-grey;
 }
 
@@ -27,6 +25,6 @@
   cursor: pointer;
 
   &:active {
-    @include color ($basic-black, 0.3)
+    color: rgba($basic-black, 0.3)
   }
 }
