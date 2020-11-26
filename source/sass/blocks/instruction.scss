@@ -1,0 +1,7 @@
+.instruction__list {
+  @include list-reset();
+}
+
+.instruction__description {
+  color: $text-grey;
+}

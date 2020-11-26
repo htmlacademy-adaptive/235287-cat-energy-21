@@ -1,0 +1,45 @@
+.promo {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 304px;
+    background-image: url("../../img/index-promo-background-mobile.png");
+  }
+}
+
+.promo__heading {
+  @include oswald(400);
+  @include fonts(36px, 36px);
+}
+
+.promo__slogan {
+  @include oswald(400);
+  @include fonts(14px, 14px);
+  color: $basic-white;
+  text-transform: uppercase;
+}
+
+.promo__button {
+  display: block;
+  padding: 7px 44px;
+  text-align: center;
+
+  @include oswald(400);
+  @include link-decoration-reset();
+
+  &:hover {
+    background-color: $active-green;
+  }
+
+  &:active {
+    color: rgba($basic-white, 0.3);
+  }
+}

@@ -1,0 +1,20 @@
+.slider__list {
+  @include list-reset();
+}
+
+.slider__text {
+  @include oswald(400);
+  @include fonts(16px, 20px);
+  border: none;
+  padding: 0;
+  border-bottom: 1px dotted $frame-grey;
+  text-transform: uppercase;
+
+  &:hover {
+    border-bottom: 1px solid $frame-grey;
+  }
+
+  &:active {
+    border-bottom: none;
+  }
+}

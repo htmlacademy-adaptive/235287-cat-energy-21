@@ -1,0 +1,8 @@
+.heading {
+  @include oswald(400);
+  @include fonts(36px, 40px);
+
+  &--white {
+    color: $basic-white;
+  }
+}

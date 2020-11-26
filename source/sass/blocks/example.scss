@@ -1,0 +1,24 @@
+.example {
+  background-color: $basic-grey;
+}
+
+.example__description {
+  color: $text-grey;
+}
+
+.example__number {
+  @include oswald(400);
+  @include fonts(24px, 24px);
+  color: $basic-black;
+  text-transform: uppercase;
+}
+
+.example__definition {
+  @include fonts(12px, 12px);
+}
+
+.example__spendings {
+  @include oswald(400);
+  @include fonts(14px, 20px);
+  text-transform: uppercase;
+}
