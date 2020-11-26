@@ -1,0 +1,31 @@
+.form__label {
+  @include oswald(400);
+  @include fonts(16px, 18px);
+  text-transform: uppercase;
+
+  &--text,
+  &--email {
+    color: $text-grey;
+  }
+}
+
+.form__label {
+  display: block;
+}
+
+.form__inpu--textarea {
+  min-width: 280px;
+}
+
+.form__input::placeholder {
+  @include oswald(400);
+  @include fonts(16px, 18px);
+  text-transform: uppercase;
+  color: $text-grey;
+}
+
+.form__button {
+  width: 100%;
+  border: none;
+  padding: 7px 44px;
+}
