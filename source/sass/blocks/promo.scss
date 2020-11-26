@@ -11,8 +11,8 @@
     left: 0;
     width: 320px;
     height: 304px;
-    background-image: url('../../img/index-promo-background-mobile.png');
-  };
+    background-image: url("../../img/index-promo-background-mobile.png");
+  }
 }
 
 .promo__heading {
@@ -31,14 +31,15 @@
   display: block;
   padding: 7px 44px;
   text-align: center;
+
   @include oswald(400);
   @include link-decoration-reset();
 
   &:hover {
     background-color: $active-green;
-  };
+  }
 
   &:active {
     color: rgba($basic-white, 0.3);
-  };
+  }
 }

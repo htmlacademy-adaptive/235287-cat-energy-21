@@ -12,20 +12,19 @@
 
 @mixin fonts($size, $height) {
   font-size: $size;
-  line-height: $height
+  line-height: $height;
 }
 
 @mixin oswald($weight) {
-  font-family: 'Oswald','Arial', sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: $weight;
 }
 
 @mixin arial ($weight) {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   font-weight: $weight;
 }
 
 @mixin link-decoration-reset() {
   text-decoration: none;
 }
-
