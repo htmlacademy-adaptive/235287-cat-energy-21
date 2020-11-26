@@ -1,0 +1,14 @@
+.program__header {
+  line-height: 36px;
+}
+
+.program__text {
+  &--subheading {
+    @include oswald(400);
+    text-transform: uppercase;
+  }
+
+  &--regular {
+    line-height: 16px;
+  }
+}

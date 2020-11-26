@@ -1,0 +1,11 @@
+.fieldset {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.fieldset__legend {
+  @include oswald(400);
+  @include fonts(24px, 26px);
+}
