@@ -28,20 +28,10 @@
   border: none;
   padding-top: 10px;
   padding-bottom: 10px;
-}
 
-.catalog-item__button--grey {
-  background-color: $basic-grey;
-  color: $text-grey;
-  border: none;
-
-  &:hover {
-    background-color: $hover-grey;
-  }
-
-  &:active {
-    background-color: $hover-grey;
-    color: rgba($text-grey, 0.3);
+  &--last {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 
