@@ -1,0 +1,7 @@
+.catalog-additional__heading {
+  @include fonts(24px, 24px);
+}
+
+.catalog-additional__list {
+  @include list-reset();
+}

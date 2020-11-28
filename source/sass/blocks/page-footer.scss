@@ -11,4 +11,6 @@
 
 .page-footer__adress {
   @include fonts(14px, 20px);
+
+  color: $text-grey;
 }

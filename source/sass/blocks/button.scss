@@ -1,10 +1,15 @@
 .button {
   @include oswald(400);
-  font-size: 14px;
-  line-height: 18px;
+  @include link-decoration-reset();
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
   color: $basic-white;
   background-color: $basic-green;
+  text-align: center;
   text-transform: uppercase;
+
 
   &:hover {
     background-color: $active-green;
@@ -12,5 +17,20 @@
 
   &:active {
     color: rgba($basic-white, 0.3);
+  }
+}
+
+.button--grey {
+  background-color: $basic-grey;
+  color: $text-grey;
+  border: none;
+
+  &:hover {
+    background-color: $hover-grey;
+  }
+
+  &:active {
+    background-color: $hover-grey;
+    color: rgba($text-grey, 0.3);
   }
 }

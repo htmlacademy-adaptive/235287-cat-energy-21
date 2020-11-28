@@ -28,9 +28,9 @@
 }
 
 .promo__button {
-  display: block;
   padding: 7px 44px;
   text-align: center;
 
+  @include fonts(14px, 18px);
   @include link-decoration-reset();
 }
