@@ -1,0 +1,50 @@
+.catalog-item {
+  margin-bottom: 20px;
+}
+
+.catalog-item__link {
+  @include link-decoration-reset();
+
+  &:active {
+    color: $special-heading-black;
+  }
+
+  &:visited {
+    color: $special-heading-black;
+  }
+}
+
+.catalog-item__heading {
+  @include oswald(400);
+  @include fonts(16px, 20px);
+  text-transform: uppercase;
+}
+
+.catalog-item__description {
+  @include list-reset();
+}
+
+.catalog-item__button {
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.catalog-item__button--grey {
+  background-color: $basic-grey;
+  color: $text-grey;
+  border: none;
+
+  &:hover {
+    background-color: $hover-grey;
+  }
+
+  &:active {
+    background-color: $hover-grey;
+    color: rgba($text-grey, 0.3);
+  }
+}
+
+.catalog-item__text {
+  @include fonts(12px, 16px);
+}

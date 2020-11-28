@@ -1,0 +1,18 @@
+.additional-item {
+  margin-bottom: 20px;
+}
+
+.additional-item__heading {
+  @include oswald(400);
+  @include fonts(16px, 16px);
+  text-transform: uppercase;
+}
+
+
+.additional-item__description {
+  @include fonts(14px, 14px);
+}
+
+.additional-item__button {
+  padding: 7px 44px;
+}
