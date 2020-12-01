@@ -2,8 +2,38 @@
   background-color: $basic-grey;
 }
 
+.example__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 690px;
+  }
+}
+
+.example__facts {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 366px;
+  }
+}
+
 .example__description {
   color: $text-grey;
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+  }
 }
 
 .example__number {

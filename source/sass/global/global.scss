@@ -15,4 +15,12 @@
 
   @include arial (400);
   @include fonts (14px, 18px);
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1440px;
+  }
 }

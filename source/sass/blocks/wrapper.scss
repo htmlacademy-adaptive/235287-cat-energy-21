@@ -1,0 +1,14 @@
+.wrapper {
+  margin-right: 20px;
+  margin-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 110px;
+    margin-left: 110px;
+  }
+}

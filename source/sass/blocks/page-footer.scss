@@ -2,15 +2,49 @@
   background-color: $basic-grey;
 }
 
+.page-footer__text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    justify-content: center;
+    width: 570px;
+    background-color: $basic-white;
+  }
+}
+
 .page-footer__heading {
   @include oswald(400);
   @include fonts(16px, 18px);
+
+  width: 140px;
   text-transform: uppercase;
   color: $special-black;
+
+  @media (min-width: $tablet-width) {
+    width: 170px;
+  }
 }
 
 .page-footer__adress {
   @include fonts(14px, 20px);
 
   color: $text-grey;
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    width: 159px;
+  }
+}
+
+.page-footer__bottom-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
