@@ -2,35 +2,18 @@
   position: relative;
   background-repeat: no-repeat;
   background-position: top center;
-
-  &::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    width: 320px;
-    height: 304px;
-    background-image: url("../../img/index-promo-background-mobile.png");
-  }
+  background-image: url("../../img/index-promo-background-mobile.png");
+  background-size: 100% 302px;
 
   @media (min-width: $tablet-width) {
-    &::before {
-      display: none;
-    }
+    background-image: none;
   }
 
   @media (min-width: $desktop-width) {
-    &::before {
-      display: block;
-      width: 720px;
-      height: 694px;
-      top: -80px;
-      left: 720px;
-      background-color: $basic-green;
-      background-repeat: no-repeat;
-      background-size: 720px 694px;
-    }
+    background-repeat: no-repeat;
+    background-size: 720px 694px;
+    background-position: calc(100% + 70px) 0;
+    background-image: url("../../img/index-promo-background-desktop.png");
     min-height: 700px;
   }
 }
@@ -38,7 +21,6 @@
 .promo__wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
 }
 
 .promo__heading {

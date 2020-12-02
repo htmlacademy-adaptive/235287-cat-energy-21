@@ -2,6 +2,14 @@
   background-color: $basic-grey;
 }
 
+.page-footer__contacts {
+  background-color: $basic-white;
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-grey;
+  }
+}
+
 .page-footer__text {
   display: flex;
   flex-direction: row;

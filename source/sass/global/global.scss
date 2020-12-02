@@ -9,8 +9,9 @@
 }
 
 .page__body {
-  margin: 0 auto;
-  width: 320px;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
   background: $basic-white;
 
   @include arial (400);
