@@ -9,10 +9,19 @@
 }
 
 .page__body {
-  margin: 0 auto;
-  width: 320px;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
   background: $basic-white;
 
   @include arial (400);
   @include fonts (14px, 18px);
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1440px;
+  }
 }

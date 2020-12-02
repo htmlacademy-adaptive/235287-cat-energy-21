@@ -2,22 +2,34 @@
   position: relative;
   background-repeat: no-repeat;
   background-position: top center;
+  background-image: url("../../img/index-promo-background-mobile.png");
+  background-size: 100% 302px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    width: 320px;
-    height: 304px;
-    background-image: url("../../img/index-promo-background-mobile.png");
+  @media (min-width: $tablet-width) {
+    background-image: none;
   }
+
+  @media (min-width: $desktop-width) {
+    background-repeat: no-repeat;
+    background-size: 720px 694px;
+    background-position: calc(100% + 70px) 0;
+    background-image: url("../../img/index-promo-background-desktop.png");
+    min-height: 700px;
+  }
+}
+
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .promo__heading {
   @include oswald(400);
   @include fonts(36px, 36px);
+
+  @media (min-width: $tablet-width) {
+    color: $basic-black;
+  }
 }
 
 .promo__slogan {
@@ -25,6 +37,10 @@
   @include fonts(14px, 14px);
   color: $basic-white;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    color: $basic-black;
+  }
 }
 
 .promo__button {
@@ -33,4 +49,10 @@
 
   @include fonts(14px, 18px);
   @include link-decoration-reset();
+
+  @media (min-width: $tablet-width) {
+    @include fonts(20px, 20px);
+    padding: 14px 26px;
+    width: 244px;
+  }
 }

@@ -1,9 +1,26 @@
 .programs__list {
   @include list-reset();
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
 }
 
 .programs__item {
+  min-height: 266px;
   background-color: $basic-grey;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 372px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 580px;
+  }
 }
 
 .programs__title {

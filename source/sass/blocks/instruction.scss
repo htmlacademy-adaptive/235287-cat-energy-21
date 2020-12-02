@@ -1,5 +1,21 @@
 .instruction__list {
   @include list-reset();
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.instruction__item {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+  }
 }
 
 .instruction__description {
