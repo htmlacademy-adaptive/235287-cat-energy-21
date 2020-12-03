@@ -7,7 +7,7 @@
   }
 }
 
-.form__owner-info{
+.form__owner-info {
   display: flex;
   flex-direction: column;
 
@@ -77,7 +77,7 @@
     width: 282px;
   }
 
-   @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 568px;
   }
 }
