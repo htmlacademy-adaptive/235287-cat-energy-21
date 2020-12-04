@@ -1,5 +1,45 @@
+.form__main-info {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.form__owner-info {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.form__additional-info {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.form__final-info {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .form__label {
   display: block;
+  margin-bottom: 14px;
 
   @include oswald(400);
   @include fonts(16px, 18px);
@@ -8,6 +48,12 @@
   &--text,
   &--email {
     color: $text-grey;
+  }
+
+  &--checkbox {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      width: 50%;
+    }
   }
 }
 
@@ -26,4 +72,12 @@
   width: 100%;
   border: none;
   padding: 7px 44px;
+
+  @media (min-width: $tablet-width) {
+    width: 282px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+  }
 }
