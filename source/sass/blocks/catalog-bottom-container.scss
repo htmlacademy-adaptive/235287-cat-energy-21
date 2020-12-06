@@ -1,0 +1,9 @@
+.catalog-bottom-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}

@@ -1,14 +1,19 @@
 .wrapper {
-  margin-right: 20px;
-  margin-left: 20px;
+  width: 280px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 30px;
-    margin-left: 30px;
+    width: 708px;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 110px;
-    margin-left: 110px;
+    width: 1440px;
+    padding-right: 110px;
+    padding-left: 110px;
   }
 }

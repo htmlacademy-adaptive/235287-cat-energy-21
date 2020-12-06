@@ -1,5 +1,12 @@
 .additional-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
 }
 
 .additional-item__heading {
@@ -10,9 +17,17 @@
 
 
 .additional-item__description {
+  display: flex;
+  justify-content: space-between;
+
   @include fonts(14px, 14px);
 }
 
 .additional-item__button {
+  width: 100%;
   padding: 7px 44px;
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+  }
 }
