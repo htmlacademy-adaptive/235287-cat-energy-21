@@ -1,16 +1,31 @@
 .catalog-promo {
   min-height: 289px;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 200px;
+  }
+
+   @media (min-width: $desktop-width) {
+    width: 245px;
+  }
 }
 
 .catalog-promo__wrapper {
-  min-width: 280px;
+  min-width: 100%;
   min-height: 289px;
-  margin-left: 20px;
-  margin-right: 20px;
   background-color: $basic-green;
   background-image: url("../../img/gift-photo-mobile.png");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    min-height: 200px;
+    background-image: url("../../img/gift-photo-tablet.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
 }
 
 .catalog-promo__text {
