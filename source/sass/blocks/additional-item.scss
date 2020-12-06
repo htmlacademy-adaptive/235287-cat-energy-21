@@ -19,6 +19,7 @@
 .additional-item__description {
   display: flex;
   justify-content: space-between;
+
   @include fonts(14px, 14px);
 }
 
