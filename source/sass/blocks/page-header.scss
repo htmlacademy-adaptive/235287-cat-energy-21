@@ -1,5 +1,69 @@
+.page-header-index {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 50%;
+      background-color: $basic-green;
+      background-image: url("../../img/index-promo-background-desktop.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: right center;
+      z-index: -1;
+    }
+  }
+}
+
 .page-header__wrapper {
+  position: relative;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: flex-start;
+    padding-top: 53px;
+  }
+}
+
+.page-header__logo--small {
+  width: 33px;
+  height: 38px;
+  margin-right: -55px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+    margin-right: 95px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
+}
+
+.page-header__logo-text {
+  width: 101px;
+  height: 18px;
+  padding-top: 24px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

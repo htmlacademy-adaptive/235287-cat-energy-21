@@ -2,4 +2,22 @@
   @include fonts(16px, 18.4px);
   @include link-decoration-reset();
   color: $text-grey;
+
+  &:active {
+    color: rgba($text-grey, 0.25);
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 21px;
+  }
+}
+
+.copyright__icon {
+  &:hover path {
+    fill: $basic-green;
+  }
+
+  &:active path {
+    fill: rgba($basic-green, 0.25);
+  }
 }
