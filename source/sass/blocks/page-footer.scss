@@ -20,21 +20,27 @@
     align-items: center;
     padding-top: 62px;
     padding-bottom: 58px;
+    padding-left: 41px;
+    padding-right: 41px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 95px;
     left: 110px;
-    justify-content: center;
     width: 570px;
+    align-items: center;
     background-color: $basic-white;
+    padding-left: 76px;
+    padding-right: 89px;
+    box-sizing: border-box;
+    padding-bottom: 48px;
   }
 }
 
 .page-footer__heading {
   @include oswald(400);
-  @include fonts(16px, 18px);
+  @include fonts(16px, 22px);
 
   width: 140px;
   margin: 0;
@@ -64,12 +70,26 @@
     @include fonts(16px, 20px);
     width: 159px;
     padding: 0;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include fonts(16px, 20px);
+    width: 159px;
+    text-align: left;
   }
 }
 
-.page-footer__adress br {
-  @media (max-width: $mobile-width-only) {
-    display: none;
+.page-footer__city {
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 20px;
+  }
+}
+
+.page-footer__map img {
+  @media (min-width: $desktop-width) {
+    height: 400px;
   }
 }
 
@@ -82,12 +102,16 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 20px;
+  }
 }
 
 .page-footer__logo-text {
   display: block;
-  padding-top: 39px;
-  padding-bottom: 32px;
+  padding-top: 36px;
+  padding-bottom: 26px;
 
   &hover {
     opacity: 0.8;

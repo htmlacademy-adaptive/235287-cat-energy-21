@@ -13,15 +13,23 @@
   position: relative;
   background-color: $basic-grey;
   margin-bottom: 20px;
+  min-height: 266px;
 
   @media (min-width: $tablet-width) {
     min-height: 372px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
     width: 570px;
-    min-height: 374px;
+    min-height: 376px;
     margin-bottom: 0;
+  }
+
+  &:last-child {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -37,7 +45,7 @@
 
   @media (min-width: $tablet-width) {
     top: 81px;
-    left: 450px;
+    left: 445px;
     width: 200px;
     height: 211px;
     background-size: 200px 211px;
@@ -63,7 +71,7 @@
 
   @media (min-width: $tablet-width) {
     top: 91px;
-    left: 415px;
+    left: 410px;
     width: 268px;
     height: 200px;
     background-size: 268px 200px;
@@ -105,16 +113,16 @@
   position: relative;
   margin: 0;
   padding: 0;
-  margin-bottom: 38px;
-  padding-left: 22px;
+  margin-bottom: 42px;
+  padding-left: 20px;
   padding-right: 33px;
   color: $text-grey;
 
   &::after {
     content: "";
     position: absolute;
-    top: 120%;
-    left: 23px;
+    top: 127%;
+    left: 20px;
     width: 88%;
     height: 1px;
     background-color: $separate-grey;
@@ -126,7 +134,7 @@
 
   @media (min-width: $tablet-width) {
     @include fonts(16px, 24px);
-    margin-bottom: 48px;
+    margin-bottom: 51px;
     padding-left: 52px;
     width: 377px;
   }
@@ -156,7 +164,7 @@
   display: block;
   margin: 0;
   padding: 0;
-  padding-left: 22px;
+  padding-left: 20px;
   padding-bottom: 18px;
 
   color: $basic-black;
@@ -189,4 +197,8 @@
     width: 32px;
     height: 12px;
   }
+}
+
+.programs__link:active::after {
+  background-image: url("../img/icons/icon-arrow-grey.svg");
 }

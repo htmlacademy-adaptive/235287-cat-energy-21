@@ -3,6 +3,7 @@
 
   @media (min-width: $tablet-width) {
     width: 440px;
+    padding-top: 11px;
   }
 
   @media (min-width: $desktop-width) {
@@ -69,6 +70,7 @@
     border-top: none;
     margin: 0;
     padding: 0;
+    padding-bottom: 10px;
 
     &--active {
       border-bottom: 2px solid $basic-green;
@@ -97,7 +99,7 @@
 .main-nav__toggle {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 20px;
   z-index: 2;
   display: block;
   width: 24px;
@@ -117,7 +119,7 @@
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 27px;
+  top: 24px;
   left: 0;
   width: 24px;
   height: 2px;
@@ -147,5 +149,23 @@
 
   &::after {
     transform: rotate(-45deg);
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav__list {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__list {
+    display: block;
+  }
+
+  .main-nav--opened .main-nav__list {
+    display: block;
   }
 }
