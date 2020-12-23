@@ -123,9 +123,30 @@
     width: 34px;
     height: 34px;
     box-sizing: border-box;
-    background-color: $basic-green;
-    border: 13px solid $basic-white;
+    background-color: $basic-white;
+    border: 1px solid $frame-grey;
     border-radius: 50%;
     box-shadow: 0 1px 3px rgba($basic-black, 0.16);
+
+    &:hover {
+      box-shadow: 0 2px 6px rgba($basic-black, 0.16);
+    };
+
+    &:active {
+      border: 2px solid $basic-green;
+    };
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      display: block;
+      width: 8px;
+      height: 8px;
+      background-color: $basic-green;
+      border-radius: 50%;
+    };
   }
 }

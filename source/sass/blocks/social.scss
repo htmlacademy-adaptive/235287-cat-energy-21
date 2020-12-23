@@ -12,6 +12,7 @@
 
   @media (min-width: $tablet-width) {
     width: 129px;
+    padding-left: 12px;
   }
 }
 
@@ -19,8 +20,16 @@
   margin-right: 33px;
   padding-top: 2px;
 
+  @media (min-width: $tablet-width) {
+    margin-right: 28px;
+  }
+
   &:nth-child(2) {
     margin-right: 36px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 22px;
+    }
   }
 }
 
@@ -44,5 +53,26 @@
 
   &:active path {
     stroke: rgba($basic-green, 0.25);
+  }
+}
+
+.social__link--instagram svg {
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.social__link--vkontakte svg {
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 24px;
+  }
+}
+
+.social__link--facebook svg {
+  @media (min-width: $tablet-width) {
+    width: 28px;
+    height: 30px;
   }
 }

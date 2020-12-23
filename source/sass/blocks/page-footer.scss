@@ -105,6 +105,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 
@@ -131,19 +132,5 @@
   @media (min-width: $tablet-width) {
     border: 0;
     width: 129px;
-  }
-}
-
-.page-footer__copyright {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding-top: 22px;
-  padding-bottom: 22px;
-
-  @media (min-width: $tablet-width) {
-    justify-content: flex-end;
-    width: 163px;
   }
 }
