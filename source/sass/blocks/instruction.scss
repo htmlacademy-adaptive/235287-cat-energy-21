@@ -1,3 +1,13 @@
+.instruction {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $border-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: none;
+  }
+}
+
 .instruction__list {
   @include list-reset();
   display: flex;
@@ -5,19 +15,167 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 60px;
+    grid-row-gap: 37px;
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 80px;
+    margin-bottom: 0;
   }
 }
 
 .instruction__item {
+  position: relative;
+  min-height: 60px;
   margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 42px;
+  }
 
   @media (min-width: $tablet-width) {
     width: 250px;
+    background-repeat: no-repeat;
+
+    &--leaf {
+      width: 230px;
+      background-image: url("../img/instruction-number-first.png");
+      background-position: 118px 0;
+    }
+
+    &--water {
+      width: 246px;
+      background-image: url("../img/instruction-number-second.png");
+      background-position: 112px 0;
+    }
+
+    &--fork {
+      width: 247px;
+      background-image: url("../img/instruction-number-third.png");
+      background-position: 113px 0;
+    }
+
+    &--clock {
+      width: 249px;
+      background-image: url("../img/instruction-number-fourth.png");
+      background-position: 113px 0;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+
+    @media (min-width: $tablet-width) {
+      top: 40px;
+      width: 80px;
+      height: 80px;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-color: $basic-green;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 280px;
+
+    &:nth-child(2n-1) {
+      margin-right: 153px;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 55px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &:nth-child(2n-1) {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+
+    &--leaf {
+      background-position: 126px 40px;
+      padding-right: 15px;
+    }
+
+    &--water {
+      background-position: 123px 37px;
+    }
+
+    &--fork {
+      width: 249px;
+      background-position: 124px 37px;
+    }
+
+    &--clock {
+      width: 250px;
+      background-position: 120px 40px;
+    }
+  }
+}
+
+.instruction__item--leaf::before {
+  background-image: url("../img/icons/icon-leaf.svg");
+}
+
+.instruction__item--water::before {
+  background-image: url("../img/icons/icon-water.svg");
+}
+
+.instruction__item--fork::before {
+  background-image: url("../img/icons/icon-fork.svg");
+}
+
+.instruction__item--clock::before {
+  background-image: url("../img/icons/icon-clock.svg");
+}
+
+.instruction__heading {
+  margin: 0;
+  padding: 0;
+  padding-top: 7px;
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 32px;
+    padding-top: 68px;
   }
 }
 
 .instruction__description {
+  min-height: 53px;
+  margin: 0;
+  padding: 0;
+  padding-left: 80px;
+  padding-top: 2px;
   color: $text-grey;
+
+  @media (min-width: $tablet-width) {
+    @include fonts(16px, 24px);
+
+    padding-left: 0;
+    padding-top: 151px;
+  }
 }

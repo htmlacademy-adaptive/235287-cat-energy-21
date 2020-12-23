@@ -5,4 +5,8 @@
   &--white {
     color: $basic-white;
   }
+
+  @media (min-width: $tablet-width) {
+    @include fonts(60px, 60px);
+  }
 }

@@ -1,5 +1,47 @@
+.slider {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 900px;
+    text-align: center;
+    padding-top: 35px;
+    padding-left: 20px;
+  }
+}
+
 .slider__list {
   @include list-reset();
+  margin-bottom: 13px;
+}
+
+.slider__item {
+  display: none;
+  text-align: center;
+  min-height: 240px;
+
+  &--current {
+    display: block;
+  }
+}
+
+.slider__image {
+  @media (min-width: $tablet-width) {
+    width: 608px;
+    height: 540px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 620px;
+    height: 515px;
+  }
+}
+
+.slider__image--fat {
+  position: relative;
 }
 
 .slider__text {
@@ -7,8 +49,12 @@
   @include fonts(16px, 20px);
   border: none;
   padding: 0;
-  border-bottom: 1px dotted $frame-grey;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include fonts(20px, 29.64px);
+    border-bottom: 1px dotted $frame-grey;
+  }
 
   &:hover {
     border-bottom: 1px solid $frame-grey;
@@ -23,4 +69,84 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
+  width: 228px;
+  min-height: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 592px;
+  }
+
+  &--before {
+    padding-left: 10px;
+  }
+
+  &--after {
+    padding-right: 5px;
+  }
+}
+
+.slider__scale {
+  position: relative;
+  box-sizing: border-box;
+  width: 84px;
+  height: 14px;
+  border: 1px solid $border-grey;
+  border-radius: 6px;
+  background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    width: 428px;
+    height: 6px;
+    margin-left: 22px;
+    margin-right: 24px;
+  }
+}
+
+.slider__bar {
+  box-sizing: border-box;
+  width: 43%;
+  height: 6px;
+  margin-top: 3px;
+  margin-bottom: 4px;
+  margin-left: 6px;
+  background-color: $basic-green;
+  border-radius: 6px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -17px;
+    left: 200px;
+    width: 34px;
+    height: 34px;
+    box-sizing: border-box;
+    background-color: $basic-white;
+    border: 1px solid $frame-grey;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba($basic-black, 0.16);
+
+    &:hover {
+      box-shadow: 0 2px 6px rgba($basic-black, 0.16);
+    }
+
+    &:active {
+      border: 2px solid $basic-green;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      width: 8px;
+      height: 8px;
+      background-color: $basic-green;
+      border-radius: 50%;
+    }
+  }
 }

@@ -6,6 +6,7 @@
   width: 100%;
   min-height: 209px;
   margin-bottom: 20px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
