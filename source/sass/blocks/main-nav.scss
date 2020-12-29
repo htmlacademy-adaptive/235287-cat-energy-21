@@ -10,6 +10,12 @@
     padding-top: 16px;
     padding-right: 40px;
   }
+
+  &--form {
+    @media (min-width: $desktop-width) {
+      padding-top: 16px;
+    }
+  }
 }
 
 .main-nav__list {
@@ -75,6 +81,10 @@
     &--active {
       border-bottom: 2px solid $basic-green;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    @include fonts(20px, 29.64px);
   }
 }
 

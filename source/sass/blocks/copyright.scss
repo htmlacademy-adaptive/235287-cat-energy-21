@@ -15,6 +15,7 @@
 .copyright__link {
   @include fonts(16px, 18.4px);
   @include link-decoration-reset();
+  display: flex;
   padding: 0;
   margin: 0;
   color: $text-grey;
