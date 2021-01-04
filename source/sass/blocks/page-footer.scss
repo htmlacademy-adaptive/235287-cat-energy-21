@@ -20,10 +20,12 @@
   flex-direction: row;
   justify-content: space-between;
 
+  padding-top: 30px;
+
   @media (min-width: $tablet-width) {
     align-items: center;
     padding-top: 22px;
-    padding-bottom: 46px;
+    padding-bottom: 48px;
     padding-left: 41px;
     padding-right: 41px;
   }
@@ -61,8 +63,11 @@
   }
 
   &--form {
-    padding-top: 34px;
-    padding-bottom: 16px;
+    padding-top: 1px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 45px;
+    }
   }
 }
 
@@ -89,8 +94,17 @@
   }
 
   &--form {
-    padding-top: 34px;
-    padding-bottom: 16px;
+    padding-top: 2px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 33px;
+      padding-right: 3px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 34px;
+      padding-right: 0;
+    }
   }
 }
 
@@ -119,11 +133,8 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    min-height: 150px;
+    align-items: flex-start;
   }
 }
 
@@ -139,6 +150,11 @@
   &active {
     opacity: 0.6;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 61px;
+    padding-bottom: 0;
+  }
 }
 
 .page-footer__social {
@@ -150,6 +166,7 @@
   @media (min-width: $tablet-width) {
     border: 0;
     width: 129px;
+    padding-top: 55px;
   }
 }
 
@@ -160,5 +177,13 @@
 
   @media (min-width: $tablet-width) {
     width: 163px;
+    padding-top: 55px;
+    padding-bottom: 0;
+    padding-right: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 163px;
+    padding-right: 0;
   }
 }
