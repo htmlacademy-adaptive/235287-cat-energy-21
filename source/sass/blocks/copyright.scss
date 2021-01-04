@@ -15,6 +15,7 @@
 .copyright__link {
   @include fonts(16px, 18.4px);
   @include link-decoration-reset();
+  display: flex;
   padding: 0;
   margin: 0;
   color: $text-grey;
@@ -24,21 +25,19 @@
   }
 }
 
+.copyright__link:hover path {
+  fill: $basic-green;
+}
+
+.copyright__link:active path {
+  fill: rgba($basic-green, 0.25);
+}
+
 .copyright__text {
   padding: 0;
   margin: 0;
 
   @media (min-width: $tablet-width) {
     margin-right: 22px;
-  }
-}
-
-.copyright__icon {
-  &:hover path {
-    fill: $basic-green;
-  }
-
-  &:active path {
-    fill: rgba($basic-green, 0.25);
   }
 }

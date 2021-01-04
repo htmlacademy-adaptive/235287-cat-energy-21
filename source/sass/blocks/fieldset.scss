@@ -3,11 +3,93 @@
   flex-direction: column;
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.fieldset__wrapper--bordered {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 28px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    border: 1px solid $border-grey;
+  }
+}
+
+.fieldset__wrapper--last {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 
 .fieldset__legend {
   @include oswald(400);
   @include fonts(24px, 26px);
+  position: relative;
+  width: 65%;
+  padding: 0;
+  margin: 0;
+  margin-left: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 35px;
+  background-color: $basic-white;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    @include fonts(36px, 36px);
+    width: 540px;
+    margin-bottom: 76px;
+  }
+
+  &--owner {
+    @media (min-width: $tablet-width) {
+      padding-top: 6px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 15px;
+    }
+  }
+
+  &--comment {
+    width: 45%;
+
+    @media (min-width: $tablet-width) {
+      width: 28%;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 17%;
+    }
+  }
+
+  &--additional {
+    width: 52%;
+    margin-bottom: 25px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 52px;
+      width: 35%;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 17%;
+    }
+  }
 }

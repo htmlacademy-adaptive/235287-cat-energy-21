@@ -1,14 +1,70 @@
+.program {
+  border-top: 1px solid $separate-grey;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
 .program__header {
   line-height: 36px;
+  margin: 0;
+  padding: 0;
+  padding-top: 24px;
+  padding-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 59px;
+    padding-bottom: 66px;
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 69px;
+    padding-bottom: 66px;
+    padding-left: 0;
+  }
 }
 
 .program__text {
   &--subheading {
     @include oswald(400);
+    width: 85%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 39px;
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      @include fonts(20px, 30px);
+      width: 323px;
+      margin-bottom: 66px;
+      padding-left: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 0;
+    }
   }
 
   &--regular {
+    margin: 0;
+    padding: 0;
+    padding-top: 21px;
+    padding-bottom: 30px;
+    text-align: center;
     line-height: 16px;
+
+    @media (min-width: $tablet-width) {
+      @include fonts(16px, 16px);
+      padding-top: 15px;
+      padding-left: 61px;
+      padding-bottom: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 18px;
+      padding-left: 81px;
+    }
   }
 }
