@@ -1,9 +1,50 @@
+.catalog-additional {
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 84px;
+  }
+}
+
 .catalog-additional__heading {
   @include fonts(24px, 24px);
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  margin-left: -20px;
+  padding-left: 20px;
+  padding-top: 25px;
+  padding-bottom: 36px;
+  background-color: $basic-white;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    @include fonts(36px, 36px);
+    width: 370px;
+    margin-left: 0;
+    padding-left: 37px;
+    padding-top: 68px;
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -40px;
+    padding-top: 76px;
+    padding-bottom: 78px;
+    padding-left: 40px;
+  }
 }
 
 .catalog-additional__list {
   @include list-reset();
+
+  @media (min-width: $tablet-width) {
+    border-top: 1px solid $separate-grey;
+  }
 
   @media (min-width: $desktop-width) {
     width: 896px;

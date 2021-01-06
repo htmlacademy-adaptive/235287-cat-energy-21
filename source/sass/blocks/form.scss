@@ -306,6 +306,10 @@
   background: rgba($basic-green, 0.3);
 }
 
+.form__input--checkbox:disabled + .form__label--checkbox::before {
+  background-image: url("../img/icons/icon-check-disabled.svg");
+}
+
 .form__button {
   border: none;
   padding: 10px 44px;
