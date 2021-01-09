@@ -1,3 +1,30 @@
 .main-item-description {
   @include fonts(12px, 16px);
+  width: 142px;
+  padding-top: 14px;
+  padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    @include fonts(16px, 16px);
+    width: 100%;
+    padding-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 3px;
+    padding-right: 8px;
+  }
+}
+
+.main-item-description__weight,
+.main-item-description__taste,
+.main-item-description__price {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 8px;
+    padding-top: 7px;
+    border-bottom: 1px solid $frame-grey;
+  }
 }

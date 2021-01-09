@@ -1,7 +1,29 @@
 .catalog-bottom-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    margin-left: -20px;
+    background-color: $basic-green;
+    top: 40px;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      top: 90px;
+      margin-left: -33px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 98px;
+      margin-left: -115px;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
