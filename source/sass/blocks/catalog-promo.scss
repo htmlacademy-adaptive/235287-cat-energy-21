@@ -55,7 +55,7 @@
   position: relative;
   margin: 0;
   padding: 0;
-  padding-top: 168px;
+  padding-top: 185px;
   width: 161px;
   color: $basic-white;
 
@@ -80,12 +80,14 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 71px;
-    padding-right: 124px;
+    padding-top: 72px;
+    padding-right: 126px;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 187px;
     padding-right: 43px;
+    text-align: center;
   }
 }
