@@ -5,6 +5,7 @@
     &::before {
       position: absolute;
       content: "";
+      min-height: 694px;
       top: 0;
       bottom: 0;
       right: 0;
@@ -41,7 +42,7 @@
   width: 33px;
   height: 38px;
   margin-right: -55px;
-  padding-top: 12px;
+  padding-top: 11px;
   padding-bottom: 12px;
 
   @media (min-width: $tablet-width) {
@@ -53,7 +54,7 @@
   @media (min-width: $desktop-width) {
     width: 202px;
     height: 59px;
-    padding-top: 3px;
+    padding-top: 0;
   }
 }
 

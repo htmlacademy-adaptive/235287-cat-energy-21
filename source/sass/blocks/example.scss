@@ -2,7 +2,7 @@
   background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(to bottom, $basic-white 0%, $basic-white 60%, $basic-grey 60%);
+    background: linear-gradient(to bottom, $basic-white 0%, $basic-white 58%, $basic-grey 60%);
   }
 
   @media (min-width: $desktop-width) {
@@ -33,7 +33,7 @@
   padding-top: 27px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 43px;
+    padding-top: 41px;
     margin-bottom: 63px;
   }
 
@@ -55,7 +55,7 @@
   @media (min-width: $tablet-width) {
     min-width: 366px;
     justify-content: flex-start;
-    margin-bottom: 59px;
+    margin-bottom: 85px;
   }
 
   @media (min-width: $desktop-width) {
@@ -153,7 +153,6 @@
     align-self: flex-start;
     text-align: right;
     flex-grow: 2;
-    margin-bottom: 50px;
     padding-top: 10px;
   }
 
@@ -164,6 +163,7 @@
     text-align: left;
     margin-left: 0;
     margin-bottom: auto;
+    padding-top: 7px;
   }
 }
 
