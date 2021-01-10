@@ -66,7 +66,7 @@
   }
 
   &--form {
-    padding-top: 1px;
+    padding-bottom: 24px;
 
     @media (min-width: $tablet-width) {
       padding-top: 45px;
@@ -99,15 +99,12 @@
   }
 
   &--form {
-    padding-top: 2px;
-
     @media (min-width: $tablet-width) {
-      padding-top: 27px;
+      padding-top: 43px;
       padding-right: 3px;
     }
 
     @media (min-width: $desktop-width) {
-      padding-top: 21px;
       padding-right: 0;
     }
   }

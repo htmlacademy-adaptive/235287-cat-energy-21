@@ -69,9 +69,11 @@
 
   &--comment {
     width: 45%;
+    padding-top: 4px;
 
     @media (min-width: $tablet-width) {
       width: 28%;
+      padding-top: 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -81,7 +83,7 @@
 
   &--additional {
     width: 52%;
-    margin-bottom: 25px;
+    margin-bottom: 27px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 52px;
