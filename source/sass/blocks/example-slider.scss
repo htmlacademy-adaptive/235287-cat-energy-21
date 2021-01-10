@@ -43,10 +43,14 @@
 .slider__image {
   &--fat {
     position: relative;
+    margin-left: -11px;
+    right: 9px;
 
     @media (min-width: $tablet-width) {
       width: 690px;
       height: 517px;
+      margin-left: 0;
+      right: 0;
     }
 
     @media (min-width: $desktop-width) {
