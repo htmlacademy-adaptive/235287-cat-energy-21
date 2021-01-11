@@ -19,12 +19,12 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 26px;
+  padding-top: 0;
 
   @media (min-width: $tablet-width) {
     align-items: center;
     padding-top: 22px;
-    padding-bottom: 40px;
+    padding-bottom: 37px;
     padding-left: 41px;
     padding-right: 41px;
   }
@@ -58,11 +58,15 @@
   @media (min-width: $tablet-width) {
     @include fonts(20px, 24px);
     width: 170px;
-    padding-top: 5px;
+    padding-top: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 41px;
   }
 
   &--form {
-    padding-top: 1px;
+    padding-bottom: 24px;
 
     @media (min-width: $tablet-width) {
       padding-top: 45px;
@@ -82,7 +86,8 @@
   @media (min-width: $tablet-width) {
     @include fonts(16px, 20px);
     width: 159px;
-    padding: 0;
+    padding-top: 42px;
+    padding-bottom: 18px;
     text-align: right;
   }
 
@@ -90,18 +95,16 @@
     @include fonts(16px, 20px);
     width: 159px;
     text-align: left;
+    padding-top: 38px;
   }
 
   &--form {
-    padding-top: 2px;
-
     @media (min-width: $tablet-width) {
-      padding-top: 27px;
+      padding-top: 43px;
       padding-right: 3px;
     }
 
     @media (min-width: $desktop-width) {
-      padding-top: 21px;
       padding-right: 0;
     }
   }
@@ -116,7 +119,7 @@
 
 .page-footer__map img {
   @media (min-width: $tablet-width) {
-    height: 396px;
+    height: 400px;
   }
 
   @media (min-width: $desktop-width) {
@@ -151,7 +154,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 61px;
+    padding-top: 56px;
     padding-bottom: 0;
   }
 
@@ -170,7 +173,7 @@
   @media (min-width: $tablet-width) {
     border: 0;
     width: 129px;
-    padding-top: 55px;
+    padding-top: 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -185,7 +188,7 @@
 
   @media (min-width: $tablet-width) {
     width: 163px;
-    padding-top: 55px;
+    padding-top: 50px;
     padding-bottom: 0;
     padding-right: 5px;
   }

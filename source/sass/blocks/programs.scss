@@ -188,7 +188,7 @@
   left: 119px;
   width: 24px;
   height: 12px;
-  background-image: url("../img/icons/icon-arrow.svg");
+  background-image: url("../img/icons/icon-arrow-short.svg");
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
@@ -199,6 +199,12 @@
   }
 }
 
+.programs__link:hover::after {
+  width: 32px;
+  background-image: url("../img/icons/icon-arrow.svg");
+}
+
 .programs__link:active::after {
+  width: 32px;
   background-image: url("../img/icons/icon-arrow-grey.svg");
 }

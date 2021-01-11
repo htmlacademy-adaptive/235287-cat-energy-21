@@ -2,8 +2,10 @@
   position: relative;
   background-repeat: no-repeat;
   background-position: top center;
-  background-image: url("../../img/index-promo-background-mobile.png");
-  background-size: 100% 302px;
+  /*background-image: url("../../img/index-promo-background-mobile.png");*/
+  background-size: 100%; /*302px;*/
+
+  background-image: linear-gradient(to top, $basic-white 97px, transparent 97px), url("../../img/index-promo-background-mobile.png"), linear-gradient(to top, $basic-white 197px, $basic-green 197px);
 
   @media (min-width: $tablet-width) {
     background-image: none;
@@ -11,7 +13,7 @@
 
   @media (min-width: $desktop-width) {
     min-height: 552px;
-    margin-bottom: 82px;
+    margin-bottom: 96px;
   }
 }
 
@@ -32,14 +34,15 @@
   margin-bottom: 3px;
 
   @media (min-width: $tablet-width) {
-    width: 609px;
-    height: 537px;
-    padding-left: 30px;
+    width: 709px;
+    height: 609px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    left: 585px;
+    top: 13px;
+    left: 558px;
     width: 552px;
     height: 499px;
   }
@@ -66,7 +69,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 80px;
-    padding-top: 78px;
+    padding-top: 95px;
   }
 }
 
@@ -83,7 +86,7 @@
     @include fonts(20px, 20px);
     color: $basic-black;
     padding-left: 87px;
-    padding-bottom: 36px;
+    padding-bottom: 18px;
   }
 
   @media (min-width: $desktop-width) {
@@ -103,8 +106,8 @@
 
   @media (min-width: $tablet-width) {
     @include fonts(20px, 20px);
-    position: relative;
-    top: -530px;
+    position: absolute;
+    top: 277px;
     z-index: 2;
     margin-left: 83px;
     padding: 16px 26px;
@@ -112,8 +115,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 0;
-    z-index: 2;
+    top: 328px;
     margin-left: 80px;
   }
 }

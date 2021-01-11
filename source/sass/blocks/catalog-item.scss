@@ -27,6 +27,7 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    top: -10px;
     min-height: 431px;
     margin-bottom: 144px;
     padding-left: 35px;
@@ -90,13 +91,21 @@
 
   &--image-small {
     @media (min-width: $tablet-width) {
-      top: -40px;
+      top: -45px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -52px;
     }
   }
 
   &--image-large {
     @media (min-width: $tablet-width) {
-      top: -70px;
+      top: -72px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -82px;
     }
   }
 }
@@ -109,6 +118,31 @@
     @media (min-width: $tablet-width) {
       width: 161px;
       height: 172px;
+      margin: 0;
+    }
+  }
+
+  &--small-fish {
+    margin-top: 47px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+    }
+  }
+
+  &--small-buckwheat {
+    margin-top: 50px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+    }
+  }
+
+  &--small-rice {
+    margin-top: 45px;
+    margin-left: 34px;
+
+    @media (min-width: $tablet-width) {
       margin: 0;
     }
   }
@@ -134,7 +168,8 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-top: 161px;
+
+    padding-top: 160px;
   }
 }
 
@@ -198,7 +233,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-top: 157px;
+      padding-top: 169px;
     }
   }
 }
