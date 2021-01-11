@@ -115,14 +115,14 @@
 }
 
 .form__input--with-icon {
-  &:disabled + svg line,
-  &:disabled + svg path {
-    stroke: $basic-green;
+  &:disabled + .form__icon--email,
+  &:disabled + .form__icon--phone {
+    color: $basic-green;
   }
 
-  &:invalid + svg line,
-  &:invalid + svg path {
-    stroke: $error-red;
+  &:invalid + .form__icon--email,
+  &:invalid + .form__icon--phone {
+    color: $error-red;
   }
 }
 

@@ -15,7 +15,7 @@
 
 .slider__list {
   @include list-reset();
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -33,7 +33,6 @@
 .slider__item {
   display: none;
   text-align: center;
-  min-height: 240px;
 
   &--current {
     display: block;
@@ -41,16 +40,14 @@
 }
 
 .slider__image {
-  &--fat {
+  &--fat,
+  &--thin {
     position: relative;
-    margin-left: -11px;
-    right: 9px;
+    margin: 0 -20px;
 
     @media (min-width: $tablet-width) {
       width: 690px;
       height: 517px;
-      margin-left: 0;
-      right: 0;
     }
 
     @media (min-width: $desktop-width) {
