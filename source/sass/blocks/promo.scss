@@ -2,8 +2,10 @@
   position: relative;
   background-repeat: no-repeat;
   background-position: top center;
-  background-image: url("../../img/index-promo-background-mobile.png");
-  background-size: 100% 302px;
+  /*background-image: url("../../img/index-promo-background-mobile.png");*/
+  background-size: 100%; /*302px;*/
+
+  background-image: linear-gradient(to top,#fff 97px,transparent 97px),url("../../img/index-promo-background-mobile.png"),linear-gradient(to top,#fff 197px, $basic-green 197px);
 
   @media (min-width: $tablet-width) {
     background-image: none;
