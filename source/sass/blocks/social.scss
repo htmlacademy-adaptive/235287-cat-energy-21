@@ -35,26 +35,16 @@
   }
 }
 
-.social__link--vkontakte,
-.social__link--instagram {
+.social__link {
   @include link-decoration-reset();
+  color: $special-icon-grey;
 
-  &:hover path {
-    fill: $basic-green;
+  &:hover {
+    color: $basic-green;
   }
 
-  &:active path {
-    fill: rgba($basic-green, 0.25);
-  }
-}
-
-.social__link--facebook {
-  &:hover path {
-    stroke: $basic-green;
-  }
-
-  &:active path {
-    stroke: rgba($basic-green, 0.25);
+  &:active {
+    color: rgba($basic-green, 0.25);
   }
 }
 
@@ -74,7 +64,7 @@
 
 .social__link--facebook svg {
   @media (min-width: $tablet-width) {
-    width: 28px;
+    width: 40px;
     height: 30px;
   }
 }

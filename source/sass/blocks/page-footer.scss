@@ -36,10 +36,16 @@
     width: 570px;
     align-items: center;
     background-color: $basic-white;
+    padding-bottom: 37px;
     padding-left: 76px;
     padding-right: 89px;
     box-sizing: border-box;
-    padding-bottom: 40px;
+  }
+
+  &--form {
+    @media (min-width: $tablet-width) {
+      padding-bottom: 41px;
+    }
   }
 }
 
@@ -182,7 +188,7 @@
 }
 
 .page-footer__copyright {
-  padding-top: 22px;
+  padding-top: 20px;
   padding-bottom: 22px;
   width: 100%;
 
