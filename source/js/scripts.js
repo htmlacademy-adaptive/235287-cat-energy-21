@@ -38,4 +38,3 @@ sliderButtonAfter.addEventListener('click', function () {
     sliderItemAfter.classList.add('slider__item--current');
   }
 });
-
