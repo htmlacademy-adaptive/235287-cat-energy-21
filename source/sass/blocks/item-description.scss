@@ -1,0 +1,36 @@
+.item-description__volume {
+  margin: 0;
+  padding: 0;
+  padding-top: 13px;
+  padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    @include fonts(16px, 20px);
+    padding-top: 0;
+    margin-right: 49px;
+    padding-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    margin-right: 0;
+    padding-top: 28px;
+  }
+}
+
+.item-description__price {
+  margin: 0;
+  padding: 0;
+  padding-top: 13px;
+  padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    @include fonts(16px, 20px);
+    padding-top: 0;
+    padding-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 28px;
+  }
+}
