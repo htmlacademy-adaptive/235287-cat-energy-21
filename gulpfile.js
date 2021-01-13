@@ -27,7 +27,6 @@ const styles = () => {
     ]))
     .pipe(sourcemap.write("."))
     .pipe(rename("style.min.css"))
-    .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
@@ -112,6 +111,8 @@ exports.copy = copy;
 const clean = () => {
   return del("build")
 }
+
+exports.clean = clean;
 
 // Server
 
