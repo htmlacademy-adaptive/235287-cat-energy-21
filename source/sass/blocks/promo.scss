@@ -2,8 +2,7 @@
   position: relative;
   background-repeat: no-repeat;
   background-position: top center;
-  /*background-image: url("../../img/index-promo-background-mobile.png");*/
-  background-size: 100%; /*302px;*/
+  background-size: 100%;
 
   background-image: linear-gradient(to top, $basic-white 97px, transparent 97px), url("../../img/index-promo-background-mobile.png"), linear-gradient(to top, $basic-white 197px, $basic-green 197px);
 
