@@ -153,6 +153,8 @@
 
 .page-footer__embedded-map {
   min-height: 362px;
+  width: 100%;
+  frameborder: 0;
 
   @media (min-width: $tablet-width) {
     min-height: 400px;
