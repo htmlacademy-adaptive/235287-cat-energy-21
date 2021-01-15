@@ -224,8 +224,7 @@
   }
 }
 
-.form__fieldset input[type="checkbox"]:checked + label::before,
-.form__fieldset input[type="radio"]:checked + label::before {
+.form__fieldset .form__input:checked + .form__label::before {
   display: block;
 }
 
