@@ -38,3 +38,10 @@ sliderButtonAfter.addEventListener('click', function () {
     sliderItemAfter.classList.add('slider__item--current');
   }
 });
+
+//Catalog-button
+
+var buttonMore = document.querySelector('.button--grey');
+buttonMore.addEventListener('click', function (evt) {
+  evt.preventDefault();
+});
