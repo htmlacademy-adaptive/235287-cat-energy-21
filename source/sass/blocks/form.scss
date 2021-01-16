@@ -28,8 +28,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
   }
 }
 
@@ -246,9 +247,10 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 60px;
-    width: 221px;
+    width: 245px;
     margin-bottom: 20px;
-    margin-right: 43px;
+    margin-right: 0;
+    box-sizing: border-box;
   }
 
   &::after {
