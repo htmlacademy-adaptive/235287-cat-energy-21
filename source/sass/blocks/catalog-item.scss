@@ -53,6 +53,7 @@
   &:nth-last-child(2) {
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
+      padding-bottom: 0;
     }
   }
 
@@ -247,6 +248,10 @@
   padding-top: 10px;
   padding-bottom: 10px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 168px;
   }
@@ -263,8 +268,12 @@
     @include fonts(16px, 18px);
     width: 167px;
     padding-top: 23px;
-    padding-bottom: 87px;
+    padding-bottom: 79px;
     text-align: center;
     color: $text-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 87px;
   }
 }
