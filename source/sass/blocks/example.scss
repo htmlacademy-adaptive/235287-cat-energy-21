@@ -20,9 +20,18 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    flex-direction: column;
     justify-content: flex-start;
-    height: 670px;
+  }
+}
+
+.example__information {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 
@@ -143,6 +152,7 @@
   margin: 0;
   padding: 0;
   margin-bottom: 44px;
+  margin-left: auto;
   text-align: center;
   text-transform: uppercase;
 

@@ -1,12 +1,10 @@
 .slider {
   @media (min-width: $tablet-width) {
-    width: 100%;
     margin-right: auto;
     margin-left: auto;
   }
 
   @media (min-width: $desktop-width) {
-    width: 860px;
     text-align: center;
     padding-top: 35px;
     padding-left: 76px;
