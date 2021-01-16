@@ -61,11 +61,11 @@
               </fieldset>
               <fieldset class="form__fieldset form__fieldset--goal fieldset">
                 <div class="fieldset__wrapper--bordered fieldset__wrapper">
-                  <input class="form__input form__input--radio" type="radio" name="purpose" value="slim" id="slim" checked>
+                  <input class="form__input form__input--radio visually-hidden" type="radio" name="purpose" value="slim" id="slim" checked>
                   <label class="form__label form__label--radio" for="slim" tabindex="0">Похудение</label>
-                  <input class="form__input form__input--radio" type="radio" name="purpose" value="mass" id="mass">
+                  <input class="form__input form__input--radio visually-hidden" type="radio" name="purpose" value="mass" id="mass">
                   <label class="form__label form__label--radio" for="mass" tabindex="0">Набор массы</label>
-                  <input class="form__input form__input--radio" type="radio" name="purpose" value="advise" id="advise">
+                  <input class="form__input form__input--radio visually-hidden" type="radio" name="purpose" value="advise" id="advise">
                   <label class="form__label form__label--radio" for="advise" tabindex="0">Не знаю (нужен ваш совет)</label>
                 </div>
               </fieldset>
@@ -99,14 +99,14 @@
               <div class="fieldset__wrapper fieldset__wrapper--additional wrapper">
                 <h2 class="fieldset__legend fieldset__legend--additional">Дополнительно</h2>
                 <div class="form__additional-info">
-                  <input class="form__input form__input--checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
-                  <label class="form__label form__label--checkbox" for="sweetener" tabindex="0">Сахарозаменитель</label>
-                  <input class="form__input form__input--checkbox" type="checkbox" name="water" id="water">
-                  <label class="form__label form__label--checkbox" for="water" tabindex="0">Питьевая вода</label>
-                  <input class="form__input form__input--checkbox" type="checkbox" name="milk" id="milk">
-                  <label class="form__label form__label--checkbox" for="milk" tabindex="0">Молоко</label>
-                  <input class="form__input form__input--checkbox" type="checkbox" name="vitamins" id="vitamins">
-                  <label class="form__label form__label--checkbox" for="vitamins" tabindex="0">Витамины</label>
+                  <input class="form__input form__input--checkbox visually-hidden" tabindex="0" type="checkbox" name="sweetener" id="sweetener" checked>
+                  <label class="form__label form__label--checkbox" for="sweetener" tabindex="-1">Сахарозаменитель</label>
+                  <input class="form__input form__input--checkbox visually-hidden" tabindex="0" type="checkbox" name="water" id="water">
+                  <label class="form__label form__label--checkbox" for="water" tabindex="-1">Питьевая вода</label>
+                  <input class="form__input form__input--checkbox visually-hidden" tabindex="0" type="checkbox" name="milk" id="milk">
+                  <label class="form__label form__label--checkbox" for="milk" tabindex="-1">Молоко</label>
+                  <input class="form__input form__input--checkbox visually-hidden" tabindex="0" type="checkbox" name="vitamins" id="vitamins">
+                  <label class="form__label form__label--checkbox" for="vitamins" tabindex="1">Витамины</label>
                 </div>
               </div>
             </fieldset>
