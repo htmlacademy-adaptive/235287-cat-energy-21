@@ -16,7 +16,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 324px;
+    width: calc(50% - 30px);
     min-height: 430px;
     margin-bottom: 140px;
     padding-left: 36px;
@@ -29,7 +29,7 @@
     width: 245px;
     top: -10px;
     min-height: 431px;
-    margin-bottom: 144px;
+    margin-bottom: 0;
     padding-left: 35px;
     padding-right: 30px;
   }
@@ -53,13 +53,7 @@
   &:nth-last-child(2) {
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
-    }
-  }
-
-  &:nth-last-child(3),
-  &:nth-last-child(4) {
-    @media (min-width: $desktop-width) {
-      margin-bottom: 0;
+      padding-bottom: 0;
     }
   }
 }
@@ -247,8 +241,19 @@
   padding-top: 10px;
   padding-bottom: 10px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 168px;
+  }
+}
+
+.catalog-item__button--last {
+  @media (min-width: $tablet-width) {
+    padding-top: 13px;
+    padding-bottom: 6px;
   }
 }
 
@@ -262,9 +267,13 @@
   @media (min-width: $tablet-width) {
     @include fonts(16px, 18px);
     width: 167px;
-    padding-top: 23px;
-    padding-bottom: 87px;
+    padding-top: 18px;
+    padding-bottom: 84px;
     text-align: center;
     color: $text-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 87px;
   }
 }

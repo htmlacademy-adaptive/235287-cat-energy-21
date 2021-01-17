@@ -1,12 +1,10 @@
 .slider {
   @media (min-width: $tablet-width) {
-    width: 100%;
     margin-right: auto;
     margin-left: auto;
   }
 
   @media (min-width: $desktop-width) {
-    width: 860px;
     text-align: center;
     padding-top: 35px;
     padding-left: 76px;
@@ -20,14 +18,14 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    left: 5px;
-    margin-bottom: 4px;
+    width: 700px;
+    min-height: 510px;
   }
 
   @media (min-width: $desktop-width) {
     top: -20px;
-    left: 10px;
-    margin-bottom: 11px;
+    left: 69px;
+    margin-bottom: 24px;
   }
 }
 
@@ -38,24 +36,66 @@
   &--current {
     display: block;
   }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    width: 700px;
+    min-height: 517px;
+  }
+}
+
+.slider__item--fat {
+  @media (min-width: $tablet-width) {
+    left: 0;
+    width: 50%;
+  }
+}
+
+.slider__item--thin {
+  @media (min-width: $tablet-width) {
+    right: 0;
+    width: 50%;
+  }
 }
 
 .slider__image {
-  &--fat,
-  &--thin {
-    position: relative;
-    margin: 0 -20px;
-    left: -5px;
+  position: relative;
 
+  @media (max-width: $mobile-width-only) {
+    left: -5px;
+    top: -2px;
+    margin: 0 -20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    height: 100%;
+    width: auto;
+    top: 0;
+  }
+
+  &--fat {
     @media (min-width: $tablet-width) {
-      width: 690px;
-      height: 517px;
-      left: 0;
+      left: 355px;
+      transform: translateX(-50%);
     }
 
     @media (min-width: $desktop-width) {
-      width: 690px;
-      height: 517px;
+      left: 334px;
+    }
+  }
+
+  &--thin {
+    @media (min-width: $tablet-width) {
+      right: 345px;
+      transform: translateX(50%);
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 366px;
     }
   }
 }
@@ -104,6 +144,15 @@
     padding-bottom: 64px;
   }
 
+  @media (min-width: $desktop-width) {
+    width: 615px;
+    margin: 0;
+    margin-left: 93px;
+    padding-bottom: 70px;
+  }
+}
+
+.slider__control {
   &--before {
     padding-left: 10px;
 
@@ -114,6 +163,10 @@
 
   &--after {
     padding-right: 5px;
+
+    @media (min-width: $desktop-width) {
+      padding-right: 0;
+    }
   }
 }
 
@@ -135,7 +188,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 0;
+    margin: 0 20px;
   }
 }
 
@@ -181,5 +234,9 @@
       background-color: $basic-green;
       border-radius: 50%;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 193px;
   }
 }

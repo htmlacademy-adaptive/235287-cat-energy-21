@@ -64,7 +64,6 @@ const images = () => {
     .pipe(imagemin([
       imagemin.mozjpeg({progressive: true}),
       imagemin.optipng({optimizationLevel: 3}),
-      imagemin.svgo()
     ]))
     .pipe(gulp.dest("build/img"))
 }
@@ -97,7 +96,7 @@ const copy = () => {
   return gulp.src([
     "source/fonts/*.{woff2,woff}",
     "source/*ico",
-    "source/img/**/*{jpg,png,svg}"
+    "source/img/**/*.{jpg,png,svg}"
   ],
     {
       base: "source"
@@ -154,7 +153,6 @@ const build = gulp.series(
     styles,
     scripts,
     html,
-    sprite,
     copy,
     images,
     createWebp
@@ -169,7 +167,6 @@ exports.default = gulp.series(
     styles,
     scripts,
     html,
-    sprite,
     copy,
     createWebp
   ),
