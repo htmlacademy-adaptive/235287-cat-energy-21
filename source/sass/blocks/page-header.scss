@@ -16,6 +16,11 @@
       background-size: cover;
       background-position: right center;
       z-index: -1;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/index-promo-background-desktop@2x.png");
+        background-size: cover;
+      }
     }
   }
 }
