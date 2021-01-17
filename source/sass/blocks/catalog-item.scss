@@ -250,6 +250,13 @@
   }
 }
 
+.catalog-item__button--last {
+  @media (min-width: $tablet-width) {
+    padding-top: 13px;
+    padding-bottom: 6px;
+  }
+}
+
 .catalog-item__text {
   @include fonts(12px, 16px);
   margin: 0;
@@ -260,8 +267,8 @@
   @media (min-width: $tablet-width) {
     @include fonts(16px, 18px);
     width: 167px;
-    padding-top: 23px;
-    padding-bottom: 79px;
+    padding-top: 18px;
+    padding-bottom: 84px;
     text-align: center;
     color: $text-grey;
   }
