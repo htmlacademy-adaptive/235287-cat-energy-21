@@ -27,7 +27,7 @@
 .example__information {
   @media (min-width: $tablet-width) {
     display: flex;
-    flex-wrap: wrap
+    flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
