@@ -16,6 +16,11 @@
       background-size: cover;
       background-position: right center;
       z-index: -1;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/index-promo-background-desktop@2x.png");
+        background-size: cover;
+      }
     }
   }
 }
@@ -55,6 +60,18 @@
     width: 202px;
     height: 59px;
     padding-top: 0;
+  }
+
+  &:hover {
+    @media (min-width: $tablet-width) {
+      opacity: 0.8;
+    }
+  }
+
+  &:active {
+    @media (min-width: $tablet-width) {
+      opacity: 0.6;
+    }
   }
 }
 

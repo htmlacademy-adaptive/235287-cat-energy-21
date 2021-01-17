@@ -6,6 +6,10 @@
 
   background-image: linear-gradient(to top, $basic-white 97px, transparent 97px), url("../../img/index-promo-background-mobile.png"), linear-gradient(to top, $basic-white 197px, $basic-green 197px);
 
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(to top, $basic-white 97px, transparent 97px), url("../../img/index-promo-background-mobile@2x.png"), linear-gradient(to top, $basic-white 197px, $basic-green 197px);
+  }
+
   @media (min-width: $tablet-width) {
     background-image: none;
   }
