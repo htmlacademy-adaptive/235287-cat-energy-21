@@ -56,6 +56,18 @@
     height: 59px;
     padding-top: 0;
   }
+
+  &:hover {
+    @media (min-width: $tablet-width) {
+      opacity: 0.8;
+    }
+  }
+
+  &:active {
+    @media (min-width: $tablet-width) {
+      opacity: 0.6;
+    }
+  }
 }
 
 .page-header__logo-text {
