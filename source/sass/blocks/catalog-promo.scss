@@ -20,15 +20,30 @@
   background-image: url("../../img/gift-photo-mobile.png");
   background-repeat: no-repeat;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.png");
+    background-size: cover;
+  }
+
   @media (min-width: $tablet-width) {
     min-height: 200px;
     background-image: url("../../img/gift-photo-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.png");
+      background-size: cover;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
     min-height: 289px;
     background-image: url("../../img/gift-photo-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.png");
+      background-size: cover;
+    }
   }
 }
 
