@@ -224,8 +224,15 @@
   outline: 2px solid $basic-black;
 }
 
-.form__input:checked + .form__label::before {
-  display: block;
+.form__input:checked + .form__label::after {
+  background-image: url("../img/icons/icon-check.svg");
+  background-repeat: no-repeat;
+  background-size: 21px 16px;
+  background-position: 4px 6px;
+
+  @media (min-width: $tablet-width) {
+    background-position: 10px 10px;
+  }
 }
 
 .form__label--checkbox {
@@ -273,26 +280,6 @@
 
   &:active::after {
     border: 1px solid rgba($special-hover-grey, 0.3);
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    display: none;
-    width: 30px;
-    height: 30px;
-    top: 12px;
-    left: 6px;
-    border: none;
-    background-color: transparent;
-    background-image: url("../img/icons/icon-check.svg");
-    background-repeat: no-repeat;
-    margin-top: 0;
-
-    @media (min-width: $tablet-width) {
-      top: 17px;
-      left: 11px;
-    }
   }
 }
 
