@@ -224,7 +224,7 @@
   outline: 2px solid $basic-black;
 }
 
-.form__input:checked + .form__label::after {
+.form__input--checkbox:checked + .form__label::after {
   background-image: url("../img/icons/icon-check.svg");
   background-repeat: no-repeat;
   background-size: 21px 16px;
@@ -233,6 +233,10 @@
   @media (min-width: $tablet-width) {
     background-position: 10px 10px;
   }
+}
+
+.form__input--radio:checked + .form__label::before {
+  display: block;
 }
 
 .form__label--checkbox {
